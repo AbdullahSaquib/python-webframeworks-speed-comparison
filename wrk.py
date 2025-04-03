@@ -1,8 +1,12 @@
 import subprocess
 import time
+import sys
 
 
-BASE_URL = "http://127.0.0.1:8000"
+if len(sys.argv) > 1:
+    BASE_URL = sys.argv[1]
+else:
+    BASE_URL = "http://127.0.0.1:8000"
 ENDPOINTS = [
     "/sync-ping", "/sync-cpu-bound", "/sync-io-bound",
     "/async-ping", "/async-cpu-bound", "/async-io-bound",
