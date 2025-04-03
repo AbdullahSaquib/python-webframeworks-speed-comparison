@@ -11,7 +11,7 @@ ENDPOINTS = [
     "/sync-ping", "/sync-cpu-bound", "/sync-io-bound",
     "/async-ping", "/async-cpu-bound", "/async-io-bound",
 ]
-WRK_COMMAND_TEMPLATE = "wrk -t10 -c1000 -d10s {url}"
+WRK_COMMAND_TEMPLATE = "wrk -t1 -c200 -d10s {url}"
 
 
 def run_wrk(endpoint):

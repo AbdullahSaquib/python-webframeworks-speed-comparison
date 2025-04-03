@@ -13,7 +13,7 @@
 
 ## Run Flask App
 
-    gunicorn flask_app.main:app --workers 342  --bind 0.0.0.0:8000
+    gunicorn flask_app.main:app --workers 8  --bind 0.0.0.0:8000
 
 
 ## Run Django App
